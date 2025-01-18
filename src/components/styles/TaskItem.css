@@ -1,0 +1,94 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s, background-color 0.3s;
+  }
+  
+  .task-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f3f3f3;
+  }
+  
+  .task-item.completed {
+    border-color: #28a745;
+    background-color: #e9f9e9;
+  }
+  
+  .task-details {
+    flex: 1;
+  }
+  
+  .task-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .task-details .description {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .task-details .priority {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task-actions button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .task-actions .status-btn {
+    color: #fff;
+  }
+  
+  .task-actions .status-btn.complete-btn {
+    background-color: #ffc107;
+  }
+  
+  .task-actions .status-btn.complete-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .task-actions .status-btn.incomplete-btn {
+    background-color: #28a745;
+  }
+  
+  .task-actions .status-btn.incomplete-btn:hover {
+    background-color: #218838;
+  }
+  
+  .task-actions .edit-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .task-actions .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .task-actions .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .task-actions .delete-btn:hover {
+    background-color: #b02a37;
+  }
+  
